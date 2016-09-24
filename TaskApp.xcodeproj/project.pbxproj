@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C316F6B1D969F520004E5B3 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C316F691D969F520004E5B3 /* CustomCell.swift */; };
+		7C316F6C1D969F520004E5B3 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C316F6A1D969F520004E5B3 /* CustomCell.xib */; };
 		7CAC05C31D96842D004E94B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAC05C21D96842D004E94B1 /* AppDelegate.swift */; };
 		7CAC05C51D96842D004E94B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAC05C41D96842D004E94B1 /* ViewController.swift */; };
 		7CAC05C81D96842D004E94B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CAC05C61D96842D004E94B1 /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		7CAC05CD1D96842D004E94B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CAC05CB1D96842D004E94B1 /* LaunchScreen.storyboard */; };
 		7CAC05D81D96842D004E94B1 /* TaskAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAC05D71D96842D004E94B1 /* TaskAppTests.swift */; };
 		7CAC05E31D96842D004E94B1 /* TaskAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAC05E21D96842D004E94B1 /* TaskAppUITests.swift */; };
+		7CAC05F11D968530004E94B1 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAC05F01D968530004E94B1 /* RootViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C316F691D969F520004E5B3 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		7C316F6A1D969F520004E5B3 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		7CAC05BF1D96842D004E94B1 /* TaskApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CAC05C21D96842D004E94B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CAC05C41D96842D004E94B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,7 @@
 		7CAC05DE1D96842D004E94B1 /* TaskAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CAC05E21D96842D004E94B1 /* TaskAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskAppUITests.swift; sourceTree = "<group>"; };
 		7CAC05E41D96842D004E94B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CAC05F01D968530004E94B1 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +105,10 @@
 			children = (
 				7CAC05C21D96842D004E94B1 /* AppDelegate.swift */,
 				7CAC05C41D96842D004E94B1 /* ViewController.swift */,
+				7CAC05F01D968530004E94B1 /* RootViewController.swift */,
 				7CAC05C61D96842D004E94B1 /* Main.storyboard */,
+				7C316F691D969F520004E5B3 /* CustomCell.swift */,
+				7C316F6A1D969F520004E5B3 /* CustomCell.xib */,
 				7CAC05C91D96842D004E94B1 /* Assets.xcassets */,
 				7CAC05CB1D96842D004E94B1 /* LaunchScreen.storyboard */,
 				7CAC05CE1D96842D004E94B1 /* Info.plist */,
@@ -235,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C316F6C1D969F520004E5B3 /* CustomCell.xib in Resources */,
 				7CAC05CD1D96842D004E94B1 /* LaunchScreen.storyboard in Resources */,
 				7CAC05CA1D96842D004E94B1 /* Assets.xcassets in Resources */,
 				7CAC05C81D96842D004E94B1 /* Main.storyboard in Resources */,
@@ -263,7 +273,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CAC05C51D96842D004E94B1 /* ViewController.swift in Sources */,
+				7C316F6B1D969F520004E5B3 /* CustomCell.swift in Sources */,
 				7CAC05C31D96842D004E94B1 /* AppDelegate.swift in Sources */,
+				7CAC05F11D968530004E94B1 /* RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +427,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9KDPSC6W9G;
 				INFOPLIST_FILE = TaskApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Suto.Kotaro.TaskApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -428,6 +441,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9KDPSC6W9G;
 				INFOPLIST_FILE = TaskApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Suto.Kotaro.TaskApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -512,6 +526,7 @@
 				7CAC05E91D96842D004E94B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7CAC05EA1D96842D004E94B1 /* Build configuration list for PBXNativeTarget "TaskAppTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +535,7 @@
 				7CAC05EC1D96842D004E94B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7CAC05ED1D96842D004E94B1 /* Build configuration list for PBXNativeTarget "TaskAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +544,7 @@
 				7CAC05EF1D96842D004E94B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
