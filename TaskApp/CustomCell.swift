@@ -20,6 +20,7 @@ class CustomCell: UITableViewCell {
         // Initialization code
         customBackgroundView?.layer.cornerRadius = 10.0
         customBackgroundView?.layer.masksToBounds = true
+        customDetailTextView?.isEditable = false
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

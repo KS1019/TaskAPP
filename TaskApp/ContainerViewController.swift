@@ -13,7 +13,7 @@ class ContainerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        plusButton.frame = CGRect(x: self.view.frame.width - 80, y: self.view.frame.height - 80 , width: 60, height: 60)
+        plusButton.frame = CGRect(x: self.view.frame.width - 70, y: self.view.frame.height - 70 , width: 60, height: 60)
         plusButton.backgroundColor = UIColor.red
         plusButton.layer.cornerRadius = 30
         plusButton.layer.masksToBounds = true

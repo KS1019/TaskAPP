@@ -80,6 +80,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67660F68BA012DEEDF013965 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A12FD88E92E2AF399F4C25C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7CAC05B61D96842D004E94B1 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +101,8 @@
 				7CAC05D61D96842D004E94B1 /* TaskAppTests */,
 				7CAC05E11D96842D004E94B1 /* TaskAppUITests */,
 				7CAC05C01D96842D004E94B1 /* Products */,
+				7A12FD88E92E2AF399F4C25C /* Pods */,
+				67660F68BA012DEEDF013965 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,6 +160,7 @@
 				7CAC05BB1D96842D004E94B1 /* Sources */,
 				7CAC05BC1D96842D004E94B1 /* Frameworks */,
 				7CAC05BD1D96842D004E94B1 /* Resources */,
+				AFE0C122E34AD42E3453965F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,6 +178,7 @@
 				7CAC05CF1D96842D004E94B1 /* Sources */,
 				7CAC05D01D96842D004E94B1 /* Frameworks */,
 				7CAC05D11D96842D004E94B1 /* Resources */,
+				C4FC2DFE639582192D67CB9D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -266,6 +284,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AFE0C122E34AD42E3453965F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TaskApp/Pods-TaskApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4FC2DFE639582192D67CB9D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TaskAppTests/Pods-TaskAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7CAC05BB1D96842D004E94B1 /* Sources */ = {
