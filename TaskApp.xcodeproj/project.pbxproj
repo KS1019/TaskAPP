@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7C316F6B1D969F520004E5B3 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C316F691D969F520004E5B3 /* CustomCell.swift */; };
 		7C316F6C1D969F520004E5B3 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C316F6A1D969F520004E5B3 /* CustomCell.xib */; };
+		7C5A783C1DA90541006867B5 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5A783B1DA90541006867B5 /* AddViewController.swift */; };
 		7C8176E11DA8DC1200D08B20 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8176E01DA8DC1200D08B20 /* ContainerViewController.swift */; };
 		7CAC05C31D96842D004E94B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAC05C21D96842D004E94B1 /* AppDelegate.swift */; };
 		7CAC05C81D96842D004E94B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CAC05C61D96842D004E94B1 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		7C316F691D969F520004E5B3 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		7C316F6A1D969F520004E5B3 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		7C5A783B1DA90541006867B5 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		7C8176E01DA8DC1200D08B20 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		7CAC05BF1D96842D004E94B1 /* TaskApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CAC05C21D96842D004E94B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -119,9 +121,10 @@
 		7CAC05C11D96842D004E94B1 /* TaskApp */ = {
 			isa = PBXGroup;
 			children = (
-				7CAC05C21D96842D004E94B1 /* AppDelegate.swift */,
-				7CAC05F01D968530004E94B1 /* RootViewController.swift */,
 				7CAC05C61D96842D004E94B1 /* Main.storyboard */,
+				7CAC05C21D96842D004E94B1 /* AppDelegate.swift */,
+				7C5A783B1DA90541006867B5 /* AddViewController.swift */,
+				7CAC05F01D968530004E94B1 /* RootViewController.swift */,
 				7C8176E01DA8DC1200D08B20 /* ContainerViewController.swift */,
 				7C316F691D969F520004E5B3 /* CustomCell.swift */,
 				7C316F6A1D969F520004E5B3 /* CustomCell.xib */,
@@ -160,7 +163,6 @@
 				7CAC05BB1D96842D004E94B1 /* Sources */,
 				7CAC05BC1D96842D004E94B1 /* Frameworks */,
 				7CAC05BD1D96842D004E94B1 /* Resources */,
-				AFE0C122E34AD42E3453965F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,7 +180,6 @@
 				7CAC05CF1D96842D004E94B1 /* Sources */,
 				7CAC05D01D96842D004E94B1 /* Frameworks */,
 				7CAC05D11D96842D004E94B1 /* Resources */,
-				C4FC2DFE639582192D67CB9D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -285,44 +286,12 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		AFE0C122E34AD42E3453965F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TaskApp/Pods-TaskApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C4FC2DFE639582192D67CB9D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TaskAppTests/Pods-TaskAppTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		7CAC05BB1D96842D004E94B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C5A783C1DA90541006867B5 /* AddViewController.swift in Sources */,
 				7C316F6B1D969F520004E5B3 /* CustomCell.swift in Sources */,
 				7CAC05C31D96842D004E94B1 /* AppDelegate.swift in Sources */,
 				7C8176E11DA8DC1200D08B20 /* ContainerViewController.swift in Sources */,

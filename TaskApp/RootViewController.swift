@@ -36,7 +36,7 @@ class RootViewController: UIViewController,UITableViewDataSource,UITableViewDele
     // MARK: - Table View Controller
     //Table Viewのセルの数を指定
     func tableView(_ table: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 0
     }
     
     //各セルの要素を設定する
@@ -44,7 +44,7 @@ class RootViewController: UIViewController,UITableViewDataSource,UITableViewDele
         
         // tableCell の ID で UITableViewCell のインスタンスを生成
         let cell = table.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CustomCell
-        
+        //cell.c
         return cell
     }
 

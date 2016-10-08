@@ -29,6 +29,9 @@ class ContainerViewController: UIViewController {
     
     func plusButtonTapped() {
         print("PPAP")
+        let addViewController : UIViewController = (self.storyboard?.instantiateViewController(withIdentifier: "AddStoryboard"))!
+        addViewController.modalTransitionStyle = UIModalTransitionStyle.coverVertical
+        self.present(addViewController, animated: true, completion: nil)
     }
 
     /*
