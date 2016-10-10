@@ -94,6 +94,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="dateTextField" destination="3tj-cu-G8b" id="u9c-To-8Ue"/>
                         <outlet property="detailTextView" destination="L3z-Uh-tZc" id="j2R-S7-J1I"/>
                         <outlet property="titleTextField" destination="6rT-sB-9M9" id="wZy-Lz-E4v"/>
                     </connections>

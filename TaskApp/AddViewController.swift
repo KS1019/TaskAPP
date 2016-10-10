@@ -8,11 +8,12 @@
 
 import UIKit
 
-class AddViewController: UIViewController {
+class AddViewController: UIViewController,UITextFieldDelegate {
     
     var cancelButton : UIButton = UIButton()
     @IBOutlet var titleTextField : UITextField? = UITextField()
     @IBOutlet var detailTextView : UITextView? = UITextView()
+    @IBOutlet var dateTextField : UITextField? = UITextField()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,9 @@ class AddViewController: UIViewController {
         cancelButton.addTarget(self, action: #selector(AddViewController.cancelButtonTapped), for: .touchUpInside)
         self.view.addSubview(cancelButton)
         
+        dateTextField?.delegate = self
+        dateTextField?.tag = 1
+        
         // 仮のサイズでツールバー生成
         let kbToolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 320, height: 40))
         kbToolBar.barStyle = UIBarStyle.default  // スタイルを設定
@@ -36,6 +40,7 @@ class AddViewController: UIViewController {
         kbToolBar.items = [spacer, commitButton]
         titleTextField?.inputAccessoryView = kbToolBar
         detailTextView?.inputAccessoryView = kbToolBar
+        dateTextField?.inputAccessoryView = kbToolBar
         // Do any additional setup after loading the view.
     }
 
@@ -50,6 +55,30 @@ class AddViewController: UIViewController {
 
     func commitButtonTapped (){
         self.view.endEditing(true)
+    }
+    // UITextField編集直後に呼ばれるメソッド
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        print("textFieldDidBeginEditing")
+        dateEditing(sender: dateTextField!)
+    }
+
+    // 日付を入力する
+    func dateEditing(sender: UITextField) {
+        print("dateEditing")
+        let datePicker            = UIDatePicker()
+        datePicker.datePickerMode = UIDatePickerMode.date
+        datePicker.locale         = NSLocale(localeIdentifier: "ja_JP") as Locale
+        sender.inputView          = datePicker
+        datePicker.addTarget(self, action: #selector(AddViewController.datePickerValueChanged), for: UIControlEvents.valueChanged)
+    }
+    
+    // 日付を変更した際にUITextFieldに値を設定する
+    func datePickerValueChanged(sender:UIDatePicker) {
+        print("datePickerValueChanged")
+        let dateFormatter       = DateFormatter()
+        dateFormatter.locale    = NSLocale(localeIdentifier: "ja_JP") as Locale!
+        dateFormatter.dateStyle = DateFormatter.Style.medium
+        dateTextField?.text = dateFormatter.string(from: sender.date)
     }
     /*
     // MARK: - Navigation
