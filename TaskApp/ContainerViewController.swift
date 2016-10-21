@@ -16,7 +16,13 @@ class ContainerViewController: UIViewController {
         plusButton.frame = CGRect(x: self.view.frame.width - 70, y: self.view.frame.height - 70 , width: 60, height: 60)
         plusButton.backgroundColor = UIColor.red
         plusButton.layer.cornerRadius = 30
-        plusButton.layer.masksToBounds = true
+        plusButton.layer.masksToBounds = false
+        
+        //ボタンに影をつける
+        plusButton.layer.shadowColor = UIColor.black.cgColor
+        plusButton.layer.shadowOpacity = 0.5
+        plusButton.layer.shadowOffset = CGSize(width: 2, height: 2)
+        
         plusButton.addTarget(self, action: #selector(ContainerViewController.plusButtonTapped), for:.touchUpInside)
         self.view.addSubview(plusButton)
         // Do any additional setup after loading the view.

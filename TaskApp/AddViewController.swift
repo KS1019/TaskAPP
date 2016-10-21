@@ -80,6 +80,7 @@ class AddViewController: UIViewController,UITextFieldDelegate {
         dateFormatter.dateStyle = DateFormatter.Style.medium
         dateTextField?.text = dateFormatter.string(from: sender.date)
     }
+    
     /*
     // MARK: - Navigation
 
@@ -90,4 +91,12 @@ class AddViewController: UIViewController,UITextFieldDelegate {
     }
     */
 
+}
+
+//データクラス
+class DataOfPost {
+    var title : String = "タイトル"
+    var date : NSDate = NSDate()
+    var detail : String = "内容"
+    var selectedTags : [String] = [String]()
 }
