@@ -14,6 +14,20 @@ class AddViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet var titleTextField : UITextField? = UITextField()
     @IBOutlet var detailTextView : UITextView? = UITextView()
     @IBOutlet var dateTextField : UITextField? = UITextField()
+    @IBOutlet var addButton : UIButton? = UIButton()
+    
+    @IBAction func addButtonTapped(){
+        let enteredItems : DataOfPost = DataOfPost()
+        enteredItems.title = (titleTextField?.text)!
+        enteredItems.detail = (detailTextView?.text)!
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = NSLocale(localeIdentifier: "ja_JP") as Locale
+        dateFormatter.dateFormat = "yyyy/MM/dd"
+        let dateFromString = dateFormatter.date(from: (dateTextField?.text)!)
+        enteredItems.date = dateFromString!
+        print("\nタイトル = \(enteredItems.title)\n内容 = \(enteredItems.detail)\n期限 = \(enteredItems.date)")
+        print("\nenteredItems.date = \(enteredItems.date)\ndateTextField?.text = \(dateTextField?.text!)\ndateFromString = \(dateFromString)\ndate = \(dateFormatter.string(from: dateFromString!))")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -96,7 +110,8 @@ class AddViewController: UIViewController,UITextFieldDelegate {
 //データクラス
 class DataOfPost {
     var title : String = "タイトル"
-    var date : NSDate = NSDate()
+    var date : Date = Date()
     var detail : String = "内容"
-    var selectedTags : [String] = [String]()
+    //また今度
+    //var selectedTags : [String] = [String]()
 }
