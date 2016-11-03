@@ -11,7 +11,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="293"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <frame key="frameInset" width="375" height="292"/>
+                <frame key="frameInset" width="375" height="292.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aSn-rD-Koj">
@@ -40,6 +40,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6U-d0-WUq">
+                                <frame key="frameInset" minX="-7" minY="-8" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="×"/>
+                                <connections>
+                                    <action selector="deleteButtonTappedWithSender:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="uLk-gi-JWz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0078431377190000002" green="0.65882354970000001" blue="0.9529411793" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -50,8 +60,9 @@
                 <outlet property="customDateLabel" destination="Ik9-v2-s5U" id="bLJ-LO-cq9"/>
                 <outlet property="customDetailTextView" destination="Dax-E3-lhn" id="Vnf-at-8cy"/>
                 <outlet property="customTitleLabel" destination="ZHt-aH-QrN" id="YsS-kt-Byg"/>
+                <outlet property="deleteButton" destination="s6U-d0-WUq" id="WZg-d0-dqO"/>
             </connections>
-            <point key="canvasLocation" x="33.5" y="266.5"/>
+            <point key="canvasLocation" x="169" y="269"/>
         </tableViewCell>
     </objects>
 </document>

@@ -5,7 +5,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--一覧-->
         <scene sceneID="cFZ-K5-tV1">
             <objects>
                 <tableViewController id="8xv-N7-1il" customClass="RootViewController" customModule="TaskApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -28,8 +28,15 @@
                             <outlet property="delegate" destination="8xv-N7-1il" id="pYg-8h-1kL"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="wE4-MP-DpV"/>
+                    <navigationItem key="navigationItem" title="一覧" id="wE4-MP-DpV">
+                        <barButtonItem key="rightBarButtonItem" title="編集" id="opB-yX-d5N">
+                            <connections>
+                                <action selector="editButtonTapped" destination="8xv-N7-1il" id="8GQ-gf-aWz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="editButton" destination="opB-yX-d5N" id="Sol-y0-UKs"/>
                         <outlet property="table" destination="qJC-2i-IfZ" id="iDa-Ir-xd6"/>
                     </connections>
                 </tableViewController>
